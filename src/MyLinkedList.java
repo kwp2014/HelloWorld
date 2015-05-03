@@ -73,8 +73,16 @@ public class MyLinkedList<E> extends MyAbstractList<E> {
 	}
 
 	private E removeLast() {
-		// TODO Auto-generated method stub
-		return null;
+		if(size ==0){
+			return null;
+		}else if(size==1){
+			Node<E> temp = head;
+			head = tail = null;
+			size = 0;
+			return temp.element;
+		}else{
+			
+		}
 	}
 
 	private E removeFirst() {
