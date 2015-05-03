@@ -3,8 +3,8 @@ public class Hello {
 
 	public static void main(String[] args) {
 		
-		MyList<String> list = new MyArrayList<String>();
-		
+//		MyList<String> list = new MyArrayList<String>();
+		MyList<String> list = new MyLinkedList<String>();
 		// add an element to the list
 		list.add("America");
 		System.out.println("[1]:"+ list);
@@ -22,9 +22,9 @@ public class Hello {
 		list.remove("France");
 		System.out.println("[5]:"+ list);
 		
-		list.add("China");
+		list.add(7,"China");
 		System.out.println("[6]:"+ list);
-		System.out.println("Hello: this is the basic ArrrayList.");
+		System.out.println("Hello: this is the basic List.");
 	}
 
 }
