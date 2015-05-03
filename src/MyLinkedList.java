@@ -85,7 +85,7 @@ public class MyLinkedList<E> extends MyAbstractList<E> {
 
 	@Override
 	public void clear() {
-		// TODO Auto-generated method stub
+		head = tail = null;
 
 	}
 
