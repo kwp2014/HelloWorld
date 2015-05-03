@@ -5,8 +5,7 @@ public class MyLinkedList<E> extends MyAbstractList<E> {
 	
 	public MyLinkedList(){}
 	
-	public MyLinkedList(E[] object){
-		
+	public MyLinkedList(E[] object){		
 		super(object);	
 	}
 	
