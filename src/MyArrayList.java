@@ -24,11 +24,17 @@ public class MyArrayList<E> extends MyAbstractList<E> {
 	 */
 	public void add(int index,E e){
 		ensureCapacity();
-		for(int i=size-1;i>=index;i--){
-			data[i+1] = data[i];
+		if(index > size-1){
+			data[size] = e;
+			size ++;
+		}else{
+			for(int i=size-1;i>=index;i--){
+				data[i+1] = data[i];
+			}
+			data[index] = e;
+			size ++;
 		}
-		data[index] = e;
-		size ++;
+		
 	}
 	
 	public void ensureCapacity(){
