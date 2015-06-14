@@ -3,11 +3,11 @@ public interface MyList<E>{
 	// add a new element at the end of the this list
 	public void add(E e);
 
-	// add a new element at the specilized index in this list
+	// add a new element at the specialized index in this list
 	public void add(int index,E e);
 
 
-	// remove the first occurence of the element o from this list
+	// remove the first occurrence of the element o from this list
 	public boolean remove(E e);	
 	
 	// remove the element at the specified position in this list
@@ -37,7 +37,7 @@ public interface MyList<E>{
 	    return the new list			*/
 	public Object set(int index,E e);
 
-	// return the number of the lement in this list
+	// return the number of the element in this list
 	public int size();
 
 
