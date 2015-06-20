@@ -1,7 +1,7 @@
 
-public class Hello {
+public class TestList {
 
-	public static void main(String[] args) {
+	public static void Main(String[] args) {
 		
 //		MyList<String> list = new MyArrayList<String>();
 		MyList<String> list = new MyLinkedList<String>();
