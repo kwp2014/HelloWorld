@@ -204,11 +204,11 @@ public class MyBinaryTree<E extends Comparable<E>> extends MyAbstractTree<E> {
 	/**
 	 * get the path from the root to the specified element
 	 */
-	public java.util.ArrayList<TreeNode<E>> path(E e) {
-		java.util.ArrayList<TreeNode<E>> list = new java.util.ArrayList<TreeNode<E>>();
+	public java.util.ArrayList<E> path(E e) {
+		java.util.ArrayList<E> list = new java.util.ArrayList<E>();
 		TreeNode<E> current = root;
 		while (current != null) {
-			list.add(current);
+			list.add(current.element);
 			if (e.compareTo(current.element) < 0) {
 				current = current.left;
 			} else if (e.compareTo(current.element) > 0) {
