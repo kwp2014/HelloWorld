@@ -1,3 +1,5 @@
+package com.kwp.ds;
+
 
 public class MyLinkedList<E> extends MyAbstractList<E> {
 

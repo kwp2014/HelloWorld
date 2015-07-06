@@ -1,4 +1,4 @@
-import java.util.Observer;
+package com.kwp.ds;
 
 /**
  * 
@@ -197,7 +197,7 @@ public class MyBinaryTree<E extends Comparable<E>> extends MyAbstractTree<E> {
 	/**
 	 * get the root in the tree
 	 */
-	public TreeNode getRoot() {
+	public TreeNode<E> getRoot() {
 		return root;
 	}
 
@@ -230,10 +230,12 @@ public class MyBinaryTree<E extends Comparable<E>> extends MyAbstractTree<E> {
 	 * @author Weiping
 	 *
 	 */
+	@SuppressWarnings("rawtypes")
 	public java.util.Iterator inorderIterator(){
 		return new InorderIterator();
 	}
 	
+	@SuppressWarnings("rawtypes")
 	public java.util.Iterator iterator(){
 		return inorderIterator();
 	}

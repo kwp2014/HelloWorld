@@ -1,3 +1,4 @@
+package com.kwp.ds;
 public interface MyList<E>{
 
 	// add a new element at the end of the this list

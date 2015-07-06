@@ -1,3 +1,5 @@
+package com.kwp.ds;
+
 /**
  * 
  */
@@ -65,6 +67,7 @@ public interface MyTree<E extends Comparable<E>> {
 	/**
 	 * 返回遍历元素的迭代器
 	 */
+	@SuppressWarnings("rawtypes")
 	public java.util.Iterator iterator();
 	
 	/**

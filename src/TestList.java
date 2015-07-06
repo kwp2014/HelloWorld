@@ -1,3 +1,6 @@
+import com.kwp.ds.MyLinkedList;
+import com.kwp.ds.MyList;
+
 
 public class TestList {
 
