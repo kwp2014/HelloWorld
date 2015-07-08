@@ -14,7 +14,7 @@ public class MyMergeSort extends MyAbstractSort implements MySort {
 	 * 
 	 */
 	public MyMergeSort() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	/**
@@ -22,7 +22,7 @@ public class MyMergeSort extends MyAbstractSort implements MySort {
 	 */
 	public MyMergeSort(int[] list) {
 		super(list);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	/* (non-Javadoc)
@@ -33,7 +33,7 @@ public class MyMergeSort extends MyAbstractSort implements MySort {
 		mergeSort(list);
 	}
 	
-	public void mergeSort(int[] list){
+	private void mergeSort(int[] list){
 		if(list.length>1){
 			int[] firstHalf = new int[list.length/2];
 			System.arraycopy(list, 0, firstHalf, 0, list.length/2);
