@@ -57,7 +57,7 @@ public class MyHeapSort extends MyAbstractSort implements MySort {
 
 	}
 
-	class Heap {
+	private class Heap {
 
 		private ArrayList<Integer> heapList = new ArrayList<Integer>();
 
@@ -65,6 +65,7 @@ public class MyHeapSort extends MyAbstractSort implements MySort {
 
 		}
 
+		@SuppressWarnings("unused")
 		public Heap(int[] objects) {
 			for (int e : objects) {
 				add(e);
