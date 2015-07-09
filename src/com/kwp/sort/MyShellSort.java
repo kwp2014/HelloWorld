@@ -48,7 +48,8 @@ public class MyShellSort extends MyAbstractSort implements MySort {
 			for (int i = h; i < data.length; i += h) {
 				if (data[i] < data[i - h]) {
 					int tmp = data[i];
-					int j = i - h;
+					// Ñ°ÕÒ²åÈëµÄÎ»ÖÃ   j = i-h,i-2h,...
+					int j = i - h; 
 					while (j >= 0 && data[j] > tmp) {
 						data[j + h] = data[j];
 						j -= h;

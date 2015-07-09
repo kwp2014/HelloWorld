@@ -19,7 +19,7 @@ public class TestSort {
 		}
 
 		long startTime = System.currentTimeMillis();
-		MySort sort = new MyShellSort(a);
+		MySort sort = new MyHeapSort(a);
 		sort.sort();
 		long endTime = System.currentTimeMillis(); // 获取结束时间
 
