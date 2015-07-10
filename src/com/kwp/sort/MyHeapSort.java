@@ -93,11 +93,14 @@ public class MyHeapSort extends MyAbstractSort implements MySort {
 				}
 				currentIndex = parentIndex;
 			}
+			// print
+			//print();
 			
 		}
 		
 		/**
 		 * 每次移除根节点，调整树
+		 *  有问题：！！
 		 * @return
 		 */
 		public Integer remove() {
@@ -106,7 +109,7 @@ public class MyHeapSort extends MyAbstractSort implements MySort {
 			}
 			Integer removeObject = heapList.get(0);
 			heapList.set(0, heapList.get(getSize()-1));
-			heapList.remove(heapList.get(getSize()-1));
+			heapList.remove(heapList.size()-1);
 			
 			// 开始调整树
 			int currentIndex = 0;
@@ -125,7 +128,7 @@ public class MyHeapSort extends MyAbstractSort implements MySort {
 					}
 				}
 				
-				if(heapList.get(currentIndex) > heapList.get(maxIndex)){
+				if(heapList.get(currentIndex) < heapList.get(maxIndex)){
 					
 				
 					// swap  the maximum with the currentIndex
@@ -142,12 +145,22 @@ public class MyHeapSort extends MyAbstractSort implements MySort {
 				
 			}
 			
+			// print
+			//print();
+						
 			return removeObject;
 
 		}
 
 		public int getSize() {
 			return heapList.size();
+		}
+		
+		private void print(){
+			for(int i=0;i<heapList.size();i++){
+				System.out.print(heapList.get(i)+",");
+			}
+			System.out.print("\n");
 		}
 
 	}

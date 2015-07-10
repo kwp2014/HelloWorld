@@ -11,7 +11,7 @@ public class TestSort {
 		// int[] list = {1,2,33,4,5,6,77,3,22};
 
 		Random random = new Random();
-		int num = 20;
+		int num = 200000;
 		int a[] = new int[num];
 		for (int i = 0; i < num; i++) {
 			a[i] = random.nextInt(num * 10);
@@ -24,7 +24,7 @@ public class TestSort {
 		long endTime = System.currentTimeMillis(); // 获取结束时间
 
 		System.out.println("\n排序运行时间： " + (endTime - startTime) + "ms");
-		sort.print();
+		//sort.print();
 
 	}
 
