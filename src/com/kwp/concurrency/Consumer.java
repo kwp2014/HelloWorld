@@ -19,8 +19,11 @@ public class Consumer extends Thread{
 	
 	public void run(){
 		String goods;
-		for(int i=0;i<200;i++){
-			goods = theStack.pop();
+		for(int i=0;i<100;i++){
+			synchronized(theStack){
+				goods = theStack.pop();
+			}
+			
 			System.out.println(getName() + ": pop " + goods + " from " + theStack.getName());
 			yield();
 		}

@@ -18,9 +18,12 @@ public class Producer extends Thread{
 	}
 	public void run(){
 		String goods;
-		for(int i=0;i<200;i++){
-			goods = "goods" + (theStack.getPoint()+1);
-			theStack.push(goods);
+		for(int i=0;i<100;i++){
+			synchronized(theStack){
+				goods = "goods_" + (theStack.getPoint()+1);
+				theStack.push(goods);
+			}
+			
 			System.out.println(getName() + ": push " + goods + " to " + theStack.getName());
 			yield();
 		}

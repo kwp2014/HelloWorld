@@ -18,10 +18,14 @@ public class Stack {
 	public String getName(){
 		return name;
 	}
-	public int getPoint(){
+	
+	public synchronized int getPoint(){
 		return point;
 	}
-	public String pop(){
+	public synchronized String pop(){
+		if(point > -1){
+			Thread.yield();
+		}
 		String goods = buffer[point];
 		buffer[point] = null;
 		Thread.yield();
@@ -29,7 +33,7 @@ public class Stack {
 		return goods;
 	}
 
-	public void push(String goods){
+	public synchronized void push(String goods){
 		point ++;
 		Thread.yield();
 		buffer[point] = goods;
