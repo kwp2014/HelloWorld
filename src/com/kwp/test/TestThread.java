@@ -12,7 +12,7 @@ public class TestThread implements Runnable {
 		}
 	}
 	
-	public static void Main(String[] args) {
+	public static void main(String[] args) {
 		TestThread testThread = new TestThread();
 		Thread test1 = new Thread(testThread);
 		Thread test2 = new Thread(testThread);

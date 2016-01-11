@@ -6,7 +6,7 @@ import com.kwp.ds.MyList;
 
 public class TestList {
 
-	public static void Main(String[] args) {
+	public static void main(String[] args) {
 		
 //		MyList<String> list = new MyArrayList<String>();
 		MyList<String> list = new MyLinkedList<String>();
