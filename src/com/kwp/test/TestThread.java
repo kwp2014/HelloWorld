@@ -8,7 +8,7 @@ public class TestThread implements Runnable {
 	public void run(){
 		for(;num<1000;num++){
 			System.out.print(Thread.currentThread().toString());
-			System.out.println(": " + num);
+			System.out.println("Ïß³Ì: " + num);
 		}
 	}
 	
