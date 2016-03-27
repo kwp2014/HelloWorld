@@ -14,8 +14,8 @@ public class TestDFS {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String[] vertices = {
-				"Se","Sa","Lo","De","Ka","Ch","Bo","Ne","At","Mi","Da","Ho"
+		String[] vertices = {"a","b","c","d","e","f",
+				"g","h","i","j","k","l"
 		};
 		int[][] edges = {
 				{0,1},{0,3},{0,5},
